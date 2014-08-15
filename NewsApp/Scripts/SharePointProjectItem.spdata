@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="Libs\MicrosoftAjax.js" Target="Scripts\Libs\" Type="ElementFile" />
+    <ProjectItemFile Source="Libs\require.js" Target="Scripts\Libs\" Type="ElementFile" />
+    <ProjectItemFile Source="Libs\datajs-1.1.2.min.js" Target="Scripts\Libs\" Type="ElementFile" />
+    <ProjectItemFile Source="Libs\purl.js" Target="Scripts\Libs\" Type="ElementFile" />
+    <ProjectItemFile Source="Libs\jquery-1.11.0.min.js" Target="Scripts\Libs\" Type="ElementFile" />
+    <ProjectItemFile Source="Libs\knockout-3.1.0.js" Target="Scripts\Libs\" Type="ElementFile" />
+    <ProjectItemFile Source="Apps\App.js" Target="Scripts\Apps\" Type="ElementFile" />
+    <ProjectItemFile Source="Apps\News.App.js" Target="Scripts\Apps\" Type="ElementFile" />
+    <ProjectItemFile Source="Helpers\Helpers.js" Target="Scripts\Helpers\" Type="ElementFile" />
+    <ProjectItemFile Source="Models\News.Model.js" Target="Scripts\Models\" Type="ElementFile" />
+    <ProjectItemFile Source="ViewModels\News.ViewModel.js" Target="Scripts\ViewModels\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

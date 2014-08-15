@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\Libs\MicrosoftAjax.js" Url="Scripts/Libs/MicrosoftAjax.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Libs\jquery-1.11.0.min.js" Url="Scripts/Libs/jquery-1.11.0.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Libs\knockout-3.1.0.js" Url="Scripts/Libs/knockout-3.1.0.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Libs\require.js" Url="Scripts/Libs/require.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Libs\datajs-1.1.2.min.js" Url="Scripts/Libs/datajs-1.1.2.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Libs\purl.js" Url="Scripts/Libs/purl.js" ReplaceContent="TRUE" />
+
+    <File Path="Scripts\Helpers\Helpers.js" Url="Scripts/Helpers/Helpers.js" ReplaceContent="TRUE" />
+
+    <File Path="Scripts\Apps\App.js" Url="Scripts/Apps/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Apps\News.App.js" Url="Scripts/Apps/News.App.js" ReplaceContent="TRUE" />
+    
+    <File Path="Scripts\Models\News.Model.js" Url="Scripts/Models/News.Model.js" ReplaceContent="TRUE" />
+    
+    <File Path="Scripts\ViewModels\News.ViewModel.js" Url="Scripts/ViewModels/News.ViewModel.js" ReplaceContent="TRUE" />
+    
+  </Module>
+</Elements>

@@ -1,0 +1,193 @@
+﻿/*#region iframe fix bootstrap col width*/
+
+/*#endregion*/
+/*#region icons*/
+[class^='rwd-icon'] {
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+[class^='rwd-icon-social'] {
+    width: 19px;
+    height: 19px;
+    background-image: url('../Images/social.png');
+}
+
+.rwd-icon-social-like {
+    background-position: 0 0;
+}
+
+.rwd-icon-social-comment {
+    background-position: -19px 0;
+}
+/*#endregion*/
+
+/*#region news announces*/
+.rwd-news-announces hr {
+    border-color: #000;
+    display: none;
+}
+
+.rwd-news-announces article {
+    margin-bottom: 20px;
+}
+
+    .rwd-news-announces article:nth-child(2n-1) {
+        clear: left;
+    }
+
+    .rwd-news-announces article h1 {
+        margin: 0;
+    }
+
+        .rwd-news-announces article h1 a.p-name {
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+            .rwd-news-announces article h1 a.p-name:hover {
+                text-decoration: underline;
+            }
+
+    .rwd-news-announces article figure {
+        display: none;
+        margin: 0;
+    }
+
+        .rwd-news-announces article figure img {
+            width: 100%;
+        }
+
+        .rwd-news-announces article figure figcaption {
+            display: none;
+        }
+
+    .rwd-news-announces article .info {
+        overflow: auto;
+    }
+
+    .rwd-news-announces article time {
+        float: left;
+        margin-right: 0.4em;
+        color: #727272;
+        vertical-align: middle;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .rwd-news-announces article address {
+        float: left;
+        margin: 0;
+        color: #727272;
+        vertical-align: middle;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+        .rwd-news-announces article address a {
+            color: #727272;
+            text-decoration: none;
+        }
+
+            .rwd-news-announces article address a:hover {
+                text-decoration: underline;
+            }
+
+    .rwd-news-announces article .social {
+        display: none;
+        float: right;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 19px;
+    }
+
+        .rwd-news-announces article .social .count {
+            color: #000;
+            vertical-align: middle;
+        }
+
+        .rwd-news-announces article .social .likes {
+            display: table-cell;
+            padding-right: 10px;
+        }
+
+            .rwd-news-announces article .social .likes:hover {
+                text-decoration: none;
+            }
+
+                .rwd-news-announces article .social .likes:hover .rwd-icon-social-like {
+                    background-position: 0 -19px;
+                }
+
+        .rwd-news-announces article .social .comments {
+            display: table-cell;
+        }
+
+            .rwd-news-announces article .social .comments:hover {
+                text-decoration: none;
+            }
+
+                .rwd-news-announces article .social .comments:hover .rwd-icon-social-comment {
+                    background-position: -19px -19px;
+                }
+
+    .rwd-news-announces article .p-summary {
+        color: #000;
+        font-size: 12px;
+    }
+
+    .rwd-news-announces article:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .rwd-news-announces article:nth-child(2) hr {
+        display: block;
+    }
+
+    /*#region news announces accent*/
+
+    .rwd-news-announces article.accent figure {
+        display: block;
+    }
+
+    .rwd-news-announces article.accent h1 a {
+        color: #83c44a;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+        .rwd-news-announces article.accent h1 a:hover {
+            text-decoration: underline;
+        }
+
+    .rwd-news-announces article.accent .info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .rwd-news-announces article.accent .social {
+        display: block;
+    }
+/*#endregion*/
+/*#endregion*/
+
+.rwd-more {
+    text-align: right;
+    font-size: 12px;
+}
+
+    .rwd-more a {
+        color: #000;
+        text-decoration: none;
+    }
+
+        .rwd-more a:hover {
+            text-decoration: underline;
+        }
+
+.rwd-hidden {
+    display: none;
+}

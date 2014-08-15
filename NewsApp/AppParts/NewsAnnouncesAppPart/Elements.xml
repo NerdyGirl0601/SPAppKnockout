@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart Name="NewsAppPart" Title="News App Part" Description="Display news from News App">
+
+    <!-- Content element identifies the location of the page that will render inside the client web part
+         Properties are referenced on the query string using the pattern _propertyName_
+         Example: Src="~appWebUrl/Pages/ClientWebPart1.aspx?Property1=_property1_" -->
+    <Content Type="html" Src="~appWebUrl/Pages/NewsAppPart.aspx?{StandardTokens}&amp;ODataQueryText=_ODataQueryText_&amp;ODataRowLimit=_ODataRowLimit_&amp;ODataSelectProperties=_ODataSelectProperties_&amp;AccentNumber=_AccentNumber_&amp;NewsSiteLink=_NewsSiteLink_" />
+
+    <!-- Define properties in the Properties element.
+         Remember to put Property Name on the Src attribute of the Content element above. -->
+    <Properties>
+      <Property 
+        Name="ODataQueryText" 
+        Type="string" 
+        WebBrowsable="true" 
+        WebDisplayName="OData Query Text" 
+        WebDescription="OData query text" 
+        WebCategory="OData Query Properties" 
+        DefaultValue="ContentTypeId:*" 
+        RequiresDesignerPermission="true" />
+      <Property
+        Name="ODataSelectProperties"
+        Type="string"
+        WebBrowsable="true"
+        WebDisplayName="OData Select Properties"
+        WebDescription="OData Select Properties"
+        WebCategory="OData Query Properties"
+        DefaultValue="Title,Url,Author,Write,PublishingImage,Description,LikesCount,ReplyCount"
+        RequiresDesignerPermission="true" />
+      <Property
+        Name="AccentNumber"
+        Type="int"
+        WebBrowsable="true"
+        WebDisplayName="Nmber of accent articles"
+        WebDescription="Nmber of accent articles"
+        WebCategory="OData Query Properties"
+        DefaultValue="2"
+        RequiresDesignerPermission="true" />
+      <Property
+        Name="ODataRowLimit"
+        Type="int"
+        WebBrowsable="true"
+        WebDisplayName="Number of selected elements"
+        WebDescription="Number of selected elements"
+        WebCategory="OData Query Properties"
+        DefaultValue="10"
+        RequiresDesignerPermission="true" />
+      <Property
+        Name="NewsSiteLink"
+        Type="string"
+        WebBrowsable="true"
+        WebDisplayName="News site link"
+        WebDescription="Link to the news site"
+        WebCategory="OData Query Properties"
+        DefaultValue="/sites/News"
+        RequiresDesignerPermission="true" />
+    </Properties>
+
+  </ClientWebPart>
+</Elements>

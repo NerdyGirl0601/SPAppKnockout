@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Styles">
+    <File Path="Styles\App.css" Url="Styles/App.css" ReplaceContent="TRUE" />
+    <File Path="Styles\News.App.css" Url="Styles/News.App.css" ReplaceContent="TRUE" />
+    <File Path="Styles\bootstrap.min.css" Url="Styles/bootstrap.min.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

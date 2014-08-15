@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance 
+    Title="News" 
+    OnQuickLaunch="TRUE" 
+    TemplateType="108" 
+    FeatureId="00bfea71-6a49-43fa-b535-d15c05500108" 
+    Url="Lists/News" 
+    Description="News List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</Field>
+          <Field Name="Body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet mauris ac neque varius lacinia eu vitae diam. Mauris vitae semper risus. Pellentesque lobortis porta eleifend. Aliquam accumsan, sem vehicula rhoncus fermentum, ante dolor posuere mauris, vitae gravida elit risus vel turpis. Nulla facilisi. In hac habitasse platea dictumst. Fusce eu eros id turpis pulvinar scelerisque vitae in leo. Cras bibendum dolor libero, ac consequat ante consequat ut. Pellentesque lacus orci, egestas id sagittis quis, ornare sit amet diam. Nulla id ornare justo, eget venenatis lacus. Aliquam sit amet ligula non sem eleifend feugiat et in neque. Donec viverra ornare eros vel cursus. Nunc scelerisque ante ut turpis aliquam aliquet in vel sapien. Quisque vitae ultricies nisi. Nunc lectus ipsum, porttitor sit amet eros pellentesque, imperdiet tristique leo. Suspendisse pulvinar, dolor eget fringilla ultricies, massa libero venenatis urna, id porta leo erat et nulla.</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47ECE55C-99FF-4F36-9859-F0C2079A2A7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewsApp</RootNamespace>
+    <AssemblyName>NewsApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{f5ff7c92-ce8c-4aac-8a99-5aca3eb8cf54}</AppFeaturePartId>
+    <WspPartId>{836c2d5e-3db7-490b-821d-3c259715e972}</WspPartId>
+    <WorkflowPartId>{8f12231e-c0fa-41a1-8978-25f5dc9d042e}</WorkflowPartId>
+    <CspkgPartId>{9375e9be-2eae-477e-811d-4b536c9f9c7a}</CspkgPartId>
+    <SqlPackagePartId>{709cfbac-09ee-4eae-b391-60c2cca88b60}</SqlPackagePartId>
+    <ActivePublishProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="AppParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00949d53-bcff-4cf6-8017-eeadc23d04c3}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e5fe3d89-152d-40fa-8f51-3901bd389947}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe35783e-c0e2-409e-aff8-f79871098364}</SharePointProjectItemId>
+    </None>
+    <None Include="AppParts\NewsAnnouncesAppPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df66b24a-569e-47f7-b36c-fad13ef3bd51}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{581fe7bd-daf2-49f7-ab61-f22581d37e79}</SharePointProjectItemId>
+    </None>
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\News.App.css" />
+    <Content Include="Images\social.png" />
+    <Content Include="Lists\News\Elements.xml" />
+    <Content Include="AppParts\NewsAnnouncesAppPart\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{709cfbac-09ee-4eae-b391-60c2cca88b60}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\NewsAppPart.aspx" />
+    <Content Include="Scripts\Helpers\Helpers.js" />
+    <Content Include="Scripts\Libs\datajs-1.1.2.min.js" />
+    <Content Include="Scripts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\Apps\App.js" />
+    <Content Include="Scripts\Libs\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\Libs\knockout-3.1.0.js" />
+    <Content Include="Scripts\Apps\News.App.js" />
+    <Content Include="Scripts\Libs\MicrosoftAjax.js" />
+    <Content Include="Scripts\Libs\purl.js" />
+    <Content Include="Scripts\ViewModels\News.ViewModel.js" />
+    <Content Include="Scripts\Models\News.Model.js" />
+    <Content Include="Scripts\Libs\require.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Styles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d14a8a6-7dad-4a50-97d8-b26a3b42b273}</SharePointProjectItemId>
+    </None>
+    <Content Include="Styles\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Styles\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{013467a8-ecc1-4066-b3d7-a472f668a80e}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{5907915f-4482-4652-8111-8ded79c51547}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\NewsApp\NewsApp.feature">
+      <FeatureId>{445cdd2e-1b1c-433d-909a-973b40e4dbe0}</FeatureId>
+    </None>
+    <None Include="Features\NewsApp\NewsApp.Template.xml">
+      <DependentUpon>NewsApp.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
